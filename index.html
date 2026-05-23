@@ -5,129 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WearLabPro - Smart Wearables Tested & Compared</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        }
-        body {
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9fafb;
-        }
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { line-height: 1.6; color: #333; background-color: #f9fafb; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
 
         /* HERO SECTION */
-        .hero {
-            background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
-            color: white;
-            text-align: center;
-            padding: 80px 20px;
-        }
-        .hero h1 {
-            font-size: 2.8rem;
-            margin-bottom: 12px;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            color: #d1d5db;
-            margin-bottom: 32px;
-        }
-        .hero-buttons {
-            display: flex;
-            gap: 16px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .btn {
-            padding: 12px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: background 0.2s ease;
-        }
-        .btn-primary {
-            background-color: #3b82f6;
-            color: white;
-        }
-        .btn-primary:hover {
-            background-color: #2563eb;
-        }
-        .btn-secondary {
-            background-color: white;
-            color: #1f2937;
-        }
-        .btn-secondary:hover {
-            background-color: #f3f4f6;
-        }
+        .hero { background: #1f2937; color: white; text-align: center; padding: 60px 20px; }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 12px; }
+        .hero p { font-size: 1.2rem; color: #d1d5db; margin-bottom: 32px; }
+        .hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+        .btn { padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: 0.2s; }
+        .btn-primary { background-color: #3b82f6; color: white; }
+        .btn-primary:hover { background-color: #2563eb; }
+        .btn-secondary { background-color: white; color: #1f2937; }
+        .btn-secondary:hover { background-color: #f3f4f6; }
 
-        /* SECTION BASE */
-        section {
-            padding: 60px 0;
-        }
-        .section-title {
-            font-size: 1.8rem;
-            margin-bottom: 32px;
-            color: #1f2937;
-            text-align: center;
-        }
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 24px;
-        }
-        .card {
-            background: white;
-            border-radius: 12px;
-            padding: 24px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-            transition: transform 0.2s ease;
-        }
-        .card:hover {
-            transform: translateY(-4px);
-        }
-        .card a {
-            text-decoration: none;
-            color: #1f2937;
-            font-weight: 600;
-            font-size: 1.1rem;
-        }
-        .card a:hover {
-            color: #3b82f6;
-        }
+        /* SECTIONS */
+        section { padding: 50px 0; }
+        .section-title { font-size: 1.8rem; margin-bottom: 32px; color: #1f2937; text-align: center; }
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+        .card { background: white; border-radius: 12px; padding: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .card a { text-decoration: none; color: #1f2937; font-weight: 600; font-size: 1.1rem; }
+        .card a:hover { color: #3b82f6; }
 
-        /* BUDGET SECTION */
-        .budget-section {
-            background-color: #f3f4f6;
-        }
-
-        /* LATEST REVIEWS */
-        .review-card {
-            background: white;
-            border-radius: 12px;
-            padding: 24px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-        }
-        .review-card h3 {
-            margin-bottom: 8px;
-        }
-        .review-card p {
-            color: #6b7280;
-            margin-bottom: 16px;
-        }
-        .read-more {
-            color: #3b82f6;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        .read-more:hover {
-            text-decoration: underline;
-        }
+        .budget-section { background-color: #f3f4f6; }
+        .review-card { background: white; border-radius: 12px; padding: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .review-card h3 { margin-bottom: 8px; }
+        .review-card p { color: #6b7280; margin-bottom: 16px; }
+        .read-more { color: #3b82f6; text-decoration: none; font-weight: 600; }
+        .read-more:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
@@ -153,7 +59,7 @@
                 <a href="#">Oura vs Ultrahuman: Which Smart Ring Wins?</a>
             </div>
             <div class="card">
-                <a href="#">WHOOP vs Fitbit: Recovery vs Everyday Fitness</a>
+                <a href="whoop-5-0-vs-4-0.html">WHOOP vs Fitbit: Recovery vs Everyday Fitness</a>
             </div>
             <div class="card">
                 <a href="#">Garmin vs Apple Watch: For Athletes or Lifestyle?</a>
@@ -186,19 +92,9 @@
         <h2 class="section-title">Latest Reviews</h2>
         <div class="card-grid">
             <div class="review-card">
-                <h3><a href="#" style="text-decoration: none; color: inherit;">WHOOP 5.0 Review: The Ultimate Recovery Tracker?</a></h3>
-                <p>We tested sleep tracking, HRV accuracy, and battery life over 4 weeks to see if the 5.0 upgrade is worth it.</p>
-                <a href="#" class="read-more">Read Full Review →</a>
-            </div>
-            <div class="review-card">
-                <h3><a href="#" style="text-decoration: none; color: inherit;">Oura Ring Gen 3 Review: Is It Still the King of Smart Rings?</a></h3>
-                <p>How does Oura compare to newer competitors in 2026? We break down accuracy, comfort, and value.</p>
-                <a href="#" class="read-more">Read Full Review →</a>
-            </div>
-            <div class="review-card">
-                <h3><a href="#" style="text-decoration: none; color: inherit;">Fitbit Charge 6 vs Inspire 3: Which One Should You Buy?</a></h3>
-                <p>Two budget-friendly trackers, but which one fits your lifestyle better? We compare features, accuracy, and price.</p>
-                <a href="#" class="read-more">Read Full Review →</a>
+                <h3><a href="whoop-5-0-vs-4-0.html" style="text-decoration: none; color: inherit;">WHOOP 5.0 vs 4.0: Is The Upgrade Worth It?</a></h3>
+                <p>We tested battery life, sensor accuracy, and real-world use cases to help you decide.</p>
+                <a href="whoop-5-0-vs-4-0.html" class="read-more">Read Full Review →</a>
             </div>
         </div>
     </div>
